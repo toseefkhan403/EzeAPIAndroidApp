@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="1.1972789115646258" />
+        <entry key="res/drawable/blue.xml" value="0.19375" />
+        <entry key="res/drawable/custom_border.xml" value="0.21197916666666666" />
+        <entry key="res/drawable/gradient_button.xml" value="0.19375" />
+        <entry key="res/drawable/ic_cancel.xml" value="0.1203125" />
+        <entry key="res/drawable/ic_login_bk.xml" value="0.17291666666666666" />
+        <entry key="res/drawable/ic_outline_arrow_back_24.xml" value="0.1203125" />
+        <entry key="res/drawable/login_shape_bk.xml" value="0.17291666666666666" />
+        <entry key="res/drawable/round_corner.xml" value="0.21197916666666666" />
+        <entry key="res/layout/activity_main.xml" value="0.25" />
+        <entry key="res/layout/activity_nativesample.xml" value="0.11" />
+        <entry key="res/layout/activity_payment_options.xml" value="0.16" />
+        <entry key="res/layout/activity_search.xml" value="0.18" />
+        <entry key="res/layout/fragment_home.xml" value="0.19583333333333333" />
+        <entry key="res/layout/fragment_search.xml" value="0.16" />
+        <entry key="res/layout/fragment_settings.xml" value="0.19583333333333333" />
+        <entry key="res/layout/item_bottom_nav.xml" value="0.146875" />
+        <entry key="res/layout/item_list_item.xml" value="0.22" />
+        <entry key="res/layout/item_list_items.xml" value="0.25" />
+        <entry key="res/layout/layout_login.xml" value="0.22" />
+        <entry key="res/layout/layout_payment_options.xml" value="0.19583333333333333" />
+        <entry key="res/layout/layout_receipt.xml" value="0.22" />
+        <entry key="res/menu/bottom_navigation_menu.xml" value="0.19583333333333333" />
+        <entry key="res/menu/bottom_navigation_menu_below.xml" value="0.146875" />
+        <entry key="res/menu/third.xml" value="0.15364583333333334" />
+        <entry key="res/mipmap-anydpi-v26/ic_new_logo.xml" value="0.21197916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

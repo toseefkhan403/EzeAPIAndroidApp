@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <include layout="@layout/layout_receipt"
+        />
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_marginTop="45dp"
+    android:id="@+id/paymentParent"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text = "Name"
+        android:layout_margin="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:textColor="@color/black"
+        android:id = "@+id/paymentNameTv"
+        android:textSize = "15sp"/>
+
+    <TextView
+        android:text = "Contact No"
+        android:layout_margin="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:textColor="@color/black"
+        android:id = "@+id/paymentContactNoTv"
+        android:textSize = "15sp"/>
+
+    <TextView
+        android:text = "Address"
+        android:layout_margin="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:textColor="@color/black"
+        android:id = "@+id/paymentAddressTv"
+        android:textSize = "15sp"/>
+
+    <TextView
+        android:text = "Torrent"
+        android:layout_margin="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:textColor="@color/black"
+        android:id = "@+id/paymentTorrentTv"
+        android:textSize = "15sp"/>
+
+    <TextView
+        android:text = "QR Code"
+        android:layout_margin="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:textColor="@color/black"
+        android:id = "@+id/paymentQrCodeTv"
+        android:textSize = "15sp"/>
+
+    <TextView
+        android:text = "Period"
+        android:layout_margin="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:textColor="@color/black"
+        android:id = "@+id/paymentPeriodTv"
+        android:textSize = "15sp"/>
+
+    <TextView
+        android:text = "Total Charges"
+        android:layout_margin="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:textColor="@color/black"
+        android:id = "@+id/paymentTotalChargesTv"
+        android:textSize = "15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginRight="-20dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:text = "Payment Options"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:textColor="@color/black"
+        android:textSize = "16sp"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/paymentRadioGroup"
+            android:divider="@color/black">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payCash"
+                android:padding="15dp"
+                android:text="Cash"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payCard"
+                android:padding="15dp"
+                android:text="Debit/Credit Card"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payQr"
+                android:padding="15dp"
+                android:text="UPI/QR Code"/>
+
+        </RadioGroup>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="130dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:elevation="3dp"
+        android:background="@drawable/round_corner"
+        android:text="Continue"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:id="@+id/resultt" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:id="@+id/backImage"
+        android:tint="@color/black"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_outline_arrow_back_24" />
+
+    <TextView
+        android:text = "Order Details"
+        android:id="@+id/orderDetails"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:textSize = "23.5sp"/>
+
+    </FrameLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: :ezetapandroidsdk_2_25:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/6bd460e96fccfc05d22ecfc52cca2ebc/transformed/ezetapandroidsdk_2_25/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6bd460e96fccfc05d22ecfc52cca2ebc/transformed/ezetapandroidsdk_2_25/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6bd460e96fccfc05d22ecfc52cca2ebc/transformed/ezetapandroidsdk_2_25/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

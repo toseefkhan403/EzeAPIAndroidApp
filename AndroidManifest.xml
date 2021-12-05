@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  package="com.android.ezepaymentsapp"
+  android:hardwareAccelerated="true"
+  android:versionCode="17"
+  android:versionName="8.0"
+  tools:ignore="GradleOverrides">
+
+  <supports-screens
+    android:anyDensity="true"
+    android:largeScreens="true"
+    android:normalScreens="true"
+    android:resizeable="true"
+    android:smallScreens="true"
+    android:xlargeScreens="true" />
+
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+  <application
+    android:networkSecurityConfig="@xml/config"
+    android:hardwareAccelerated="true"
+    android:icon="@mipmap/ic_new_logo"
+    android:label="@string/app_name"
+    android:theme="@style/MyTheme"
+    android:supportsRtl="true"
+    tools:node="merge">
+    <activity
+      android:name="com.android.ezepaymentsapp.MainActivity"
+      android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+      android:label="@string/app_name"
+      android:launchMode="singleTop"
+      android:windowSoftInputMode="adjustResize">
+      <intent-filter android:label="@string/launcher_name">
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+    <activity
+        android:name="com.android.ezepaymentsapp.SearchBoxActivity"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+        android:label="Search"
+        android:launchMode="singleTop"
+        android:windowSoftInputMode="adjustPan" />
+    <activity
+        android:name="com.android.ezepaymentsapp.PayOptionsActivity"
+        android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+        android:label="Payment Options"
+        android:launchMode="singleTop"
+        android:windowSoftInputMode="adjustResize" />
+    <activity
+      android:name="com.android.ezepaymentsapp.EzeNativeSampleActivity"
+      android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
+      android:label="Native Sample"
+      android:launchMode="singleTop"
+      android:windowSoftInputMode="adjustResize" />
+    <activity
+      android:name="com.android.ezepaymentsapp.Setting"
+      android:configChanges="orientation"
+      android:label="Native Sample"
+      android:launchMode="singleTop"
+      android:windowSoftInputMode="adjustPan" />
+
+    <provider
+      android:name="com.ezetap.sdk.EzetapFileProvider"
+      android:authorities="${applicationId}.EzetapFileProvider"
+      android:exported="false"
+      android:grantUriPermissions="true">
+      <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/provider_paths" />
+    </provider>
+  </application>
+
+</manifest>

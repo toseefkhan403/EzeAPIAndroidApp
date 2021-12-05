@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation"
+        />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:theme="@style/BottomNavigationStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation_menu"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextColor="@color/bottom_nav_color"
+        android:background="@color/colorPrimary"/>
+
+<!--    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:stretchColumns="0,1,2,3,4"
+        android:id="@+id/bottom_navigation_below"
+        android:layout_alignParentBottom="true" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                style="@style/bottomText"
+                android:id="@+id/add_home_tv"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:text="Home" />
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/bottomText"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="" />
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/bottomText"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="History" />
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/bottomText"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Last Receipt" />
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/bottomText"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+
+        </TableRow>
+
+    </TableLayout>-->
+
+</RelativeLayout>

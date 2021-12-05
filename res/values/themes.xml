@@ -1,0 +1,5 @@
+<resources>
+    <style name="MyTheme" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:typeface">serif</item>
+    </style>
+</resources>

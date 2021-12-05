@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.2'
+    }
+
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+allprojects {
+    repositories {
+        jcenter()
+        google()
+    }
+}
+
+
+android {
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    defaultConfig {
+        versionCode 8
+        minSdkVersion 15
+        applicationId "com.android.ezepaymentsapp"
+    }
+
+    compileSdkVersion 29
+//    buildToolsVersion cdvBuildToolsVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildToolsVersion '29.0.2'
+}
+
+dependencies {
+//    implementation fileTree(include: '*.jar', dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation(name: 'ezetapandroidsdk_2_25', ext: 'aar')
+//    implementation(name: 'android-support-v4', ext: 'jar')
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+//    implementation 'com.google.android.material:material:1.1.0-alpha10'
+
+}

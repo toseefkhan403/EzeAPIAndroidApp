@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_house"
+        android:icon="@drawable/ic_home"
+        android:title="Add House" />
+    <item
+        android:id="@+id/collection"
+        android:icon="@drawable/ic_collection"
+        android:title="Collection" />
+    <item
+        android:id="@+id/collection_history"
+        android:icon="@drawable/ic_collection_history"
+        android:title="History" />
+    <item
+        android:id="@+id/reprint_receipt"
+        android:icon="@drawable/ic_receipt"
+        android:title="Reprint Receipt" />
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout" />
+</menu>

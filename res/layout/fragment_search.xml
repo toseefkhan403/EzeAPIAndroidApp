@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text = "Search"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height = "wrap_content"
+            android:textSize = "23.5sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:layout_weight="70"
+                android:layout_margin="5dp"
+                android:padding="15dp"
+                android:inputType="text"
+                style="@style/modifiedEditText"
+                android:id = "@+id/query"
+                android:hint = "Enter House No/Unique Id/QRcode/Torrent/Contact Number"
+                android:focusable = "true"/>
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:layout_margin="5dp"
+                android:elevation="3dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_corner"
+                android:text="Search"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:dividerHeight="6.0sp"
+            android:divider="@android:color/transparent"
+            android:id="@+id/listView" />
+
+    </LinearLayout>
+
+</RelativeLayout>
